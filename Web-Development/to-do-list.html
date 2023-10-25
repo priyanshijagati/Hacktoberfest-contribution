@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('beautiful-background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #app {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 5px;
+            font-size: 1rem;
+            border: none;
+            background: transparent;
+            color: #fff;
+        }
+
+        button {
+            background-color: #FFA500; /* Orange button */
+            color: #fff;
+            font-size: 1.2rem;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #FF8C00; /* Darker orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Beautiful To-Do List</h1>
+    <div id="app">
+        <ul>
+            <li>
+                <input type="checkbox">
+                <input type="text" value="Buy groceries">
+                <button>Delete</button>
+            </li>
+            <li>
+                <input type="checkbox">
+                <input type="text" value="Walk the dog">
+                <button>Delete</button>
+            </li>
+        </ul>
+        <input type="text" placeholder="Add a new task">
+        <button>Add</button>
+    </div>
+</body>
+</html>
